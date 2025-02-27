@@ -1,0 +1,28 @@
+/* ToDoList.css */
+.todo-item {
+    background-color: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-item:hover {
+    background-color: #f7fafc;
+  }
+  
+  .delete-btn {
+    background-color: #e53e3e; /* Kırmızı silme butonu */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c53030;
+  }
+  

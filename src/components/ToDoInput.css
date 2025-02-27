@@ -1,0 +1,42 @@
+/* ToDoInput.css */
+
+.container {
+    display: flex;
+    gap: 15px; /* Input ile buton arasına mesafe */
+    align-items: center;
+    width: 100%; /* Container'ın genişliğini yüzde 100 yapalım */
+    max-width: 600px; /* Container'ın maksimum genişliğini sınırlayalım */
+  }
+  
+  input {
+    border-radius: 8px;
+    padding: 12px 20px;  /* Daha geniş padding */
+    border: 0.5px solid #ddd;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+    flex: 1;  /* Flex özelliği ile input kutusunu esnek hale getir */
+  }
+  
+  input:focus {
+    box-shadow: 0 0 10px rgba(17, 17, 18, 0.5);
+  }
+  
+  button {
+    background-color: #080808; /* Buton rengi */
+    color: white;
+    padding: 12px 20px;  /* Butonun padding'ini arttır */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Buton ile ikon arasına daha fazla mesafe */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Buton ile input arasına mesafe ekle */
+  }
+  
+  button:hover {
+    background-color: #2c7a7b; /* Hover efekti */
+  }
+  
