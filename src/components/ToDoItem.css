@@ -1,35 +1,66 @@
-/* ToDoItem.css */
-
-.container {
+.todo-item {
+  background: linear-gradient(to right, #424726, #080808);
+  padding: 12px 20px;
+  border: 0.5px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* Mesafeyi ayarlayın */
-  margin-bottom: 20px; /* Input kutusu ile liste arasına mesafe ekleyin */
+  align-items: center;
 }
 
-.todo-item {
-    background: linear-gradient(to right, #424726, #080808); /* Kart rengi */
-    padding: 12px 20px;
-    border: 0.5px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .todo-item button {
-    background-color: #e63946; /* Silme butonu rengi */
-    color: white;
-    padding: 6px 12px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .todo-item button:hover {
-    background-color: #c02942; /* Silme butonunun hover efekti */
-  }
-  
+.todo-item input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px; /* Butonlar arasına boşluk ekler */
+}
+
+.edit-button {
+  background-color: #e63946;
+  color: white;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #c02942;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #388e3c;
+}
+
+.delete-button {
+  background-color: #e63946;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c02942;
+}

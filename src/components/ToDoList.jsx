@@ -1,7 +1,7 @@
 import ToDoItem from './ToDoItem';
 
 
-function ToDoList({ tasks, deleteTask }) {
+function ToDoList({ tasks, deleteTask,updateTask }) {
     return (
       <div>
         {tasks.map((task, index) => (
@@ -10,6 +10,7 @@ function ToDoList({ tasks, deleteTask }) {
             task={task} 
             index={index} 
             deleteTask={deleteTask} // Burada deleteTask fonksiyonunu geçiyoruz
+            updateTask={updateTask}
           />
         ))}
       </div>

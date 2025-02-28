@@ -38,11 +38,18 @@ function App() {
     setTasks(updatedTasks);  // Silinen görevi tasks array'inden çıkart
   };
 
+  const updateTask = (index, newTask) => {
+    const updatedTasks = tasks.map((task, i) => (i === index ? newTask : task));
+    setTasks(updatedTasks);
+  };
+
   return (
     <div className='min-h-screen bg-gray-100 flex flex-col items-center py-10'>
       <h1 className='text-3xl font-bold mb-6'>✅ To-Do List</h1>
-      <ToDoInput addTask={addTask} />
-      <ToDoList tasks={tasks} deleteTask={deleteTask} />
+      <div className="todo-container">
+        <ToDoInput addTask={addTask} />
+        <ToDoList tasks={tasks} deleteTask={deleteTask} updateTask={updateTask} />
+      </div>
     </div>
   );
 }

@@ -22,6 +22,15 @@ button:hover {
   background-color: #94ab13; /* Buton hover rengi */
 }
 
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Input ile kartlar arasında boşluk bırakır */
+  width: 100%;
+  max-width: 400px;
+}
+
 
 
 
